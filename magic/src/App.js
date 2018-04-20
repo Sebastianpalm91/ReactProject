@@ -4,6 +4,8 @@ import Titles from './components/Titles.js'
 import Form from './components/Form.js'
 import Weather from './components/Weather.js'
 import Flag from './components/Flag.js'
+import Particles from 'react-particles-js';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 const API_KEY = '71c38ee2c66408a33dd48f2e7130bd62';
 
@@ -54,24 +56,24 @@ class App extends Component
         return (
             <div>
                 <div className="wrapper">
+                    <Particles className="particle"/>
                     <div className="main">
-                            <div className="row">
-                                <div className="col-md-5 title-container">
-                                    <Titles />
-                                    <Flag country={this.state.country}/>
-                                </div>
-                                <div className="col-md-7 form-container">
-                                    <Form getWeather={this.getWeather} />
-                                    <Weather
-                                        city={this.state.city}
-                                        country={this.state.country}
-                                        temperature={this.state.temperature}
-                                        description={this.state.description}
-                                        humidity={this.state.humidity}
-                                        wind={this.state.wind}
-                                        error={this.state.error}
-                                        />
-                                </div>
+                        <div className="row">
+                            <div className="col-md-5 title-container">
+                                <Titles />
+                                <Flag country={this.state.country}/>
+                            </div>
+                            <div className="col-md-7 form-container">
+                                <Form getWeather={this.getWeather} />
+                                <Weather
+                                    city={this.state.city}
+                                    country={this.state.country}
+                                    temperature={this.state.temperature}
+                                    description={this.state.description}
+                                    humidity={this.state.humidity}
+                                    wind={this.state.wind}
+                                    error={this.state.error}
+                                    />
                             </div>
                     </div>
                 </div>
@@ -79,6 +81,5 @@ class App extends Component
         );
     };
 }
-
 
 export default App;
