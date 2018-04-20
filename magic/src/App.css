@@ -54,6 +54,11 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 
+#particles-js {
+    height: 100%;
+    background-color: #1c1a1c;
+}
+
 .title-container__subtitle {
   font-style: italic;
   font-weight: 100;
