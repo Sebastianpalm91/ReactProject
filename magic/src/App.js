@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Titles from './components/Titles.js'
 import Form from './components/Form.js'
 import Weather from './components/Weather.js'
+import Flag from './components/Flag.js'
 
 const API_KEY = '71c38ee2c66408a33dd48f2e7130bd62';
 
@@ -31,10 +32,10 @@ class App extends Component
             this.setState({
                 city: data.name,
                 country: data.sys.country,
-                temperature: data.main.temp,
+                temperature: Math.round(data.main.temp-273.1500 * 1)+"°C",
                 description: data.weather[0].description,
-                humidity: data.main.humidity,
-                wind: data.wind.speed,
+                humidity: data.main.humidity + "%",
+                wind: data.wind.speed + " m/s",
                 error: ''
             })
         } else {
@@ -56,10 +57,11 @@ class App extends Component
                     <div className="main">
                         <div className="container">
                             <div className="row">
-                                <div className="col-xs-5 title-container">
+                                <div className="col-md-5 title-container">
                                     <Titles />
+                                    <Flag country={this.state.country}/>
                                 </div>
-                                <div className="col-xs-7 form-container">
+                                <div className="col-md-7 form-container">
                                     <Form getWeather={this.getWeather} />
                                     <Weather
                                         city={this.state.city}
