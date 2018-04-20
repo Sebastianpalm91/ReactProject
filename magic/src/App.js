@@ -55,7 +55,6 @@ class App extends Component
             <div>
                 <div className="wrapper">
                     <div className="main">
-                        <div className="container">
                             <div className="row">
                                 <div className="col-md-5 title-container">
                                     <Titles />
@@ -74,7 +73,6 @@ class App extends Component
                                         />
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
