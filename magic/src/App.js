@@ -5,7 +5,7 @@ import Form from './components/Form.js'
 import Weather from './components/Weather.js'
 import Flag from './components/Flag.js'
 import Particles from 'react-particles-js';
-// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 const API_KEY = '71c38ee2c66408a33dd48f2e7130bd62';
 
