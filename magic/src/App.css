@@ -43,11 +43,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./images/lightning4.png');
+    background-image: url('./images/lightning2.png');
     background-position: center center;
-    background-origin: content-box;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     filter: brightness(3);
     z-index: -1;
 }
