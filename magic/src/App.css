@@ -11,47 +11,103 @@ Red: #e74c3c
 */
 
 body {
-  font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e162b;
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
 }
 
 .wrapper {
-  background-color: #0e162b;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.lightning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/lightning3.png');
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(3);
+    z-index: -1;
+}
+
+.flash{
+    animation: flash ease-out 9s infinite;
+    animation-delay: 0s;
+}
+
+@-webkit-keyframes flash {
+    from { opacity: 0; }
+    92% { opacity: 0; }
+    93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 0.9; }
+    to { opacity: 0; }
+}
+
+@keyframes flash {
+    from { opacity: 0; }
+    92% { opacity: 0; }
+    93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+
+
 .particle {
     width: 100%;
     height: 100%;
 }
 
 .main {
-  position: absolute;
-  height: 90vh;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
-  width: 90%;
-  margin: 0 auto;
+    position: absolute;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .title-container {
-  height: 90vh;
-  /* background: url("img/bg.jpg") center center no-repeat; */
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: #000;
+    height: 90vh;
+    /* background: url("img/bg.jpg") center center no-repeat; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
 }
 
 .title-container__title {
-  font-size: 50px;
-  letter-spacing: 2px;
-  line-height: 1.3;
-  font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    font-family: 'Roboto Slab', serif;
 }
 
 #particles-js {
@@ -60,45 +116,45 @@ body {
 }
 
 .title-container__subtitle {
-  font-style: italic;
-  font-weight: 100;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-family: "Merriweather", serif;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
 }
 
 .form-container {
-  height: 90vh;
-  padding-top: 100px;
-  padding-left: 50px;
+    height: 90vh;
+    padding-top: 100px;
+    padding-left: 50px;
 }
 
 .weather__info {
-  width: 60%;
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 2px;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
 .weather__key {
-  color: #f16051;
-  border-bottom: solid 2px rgba(255,255,255,0.06);
-  padding: 20px 0 20px 0;
-  font-weight: 400;
+    color: #f16051;
+    border-bottom: solid 2px rgba(255,255,255,0.06);
+    padding: 20px 0 20px 0;
+    font-weight: 400;
 }
 
 .weather__key:last-child {
-  border: 0;
+    border: 0;
 }
 
 .weather__value {
-  color: #fafaff;
-  font-weight: 200;
+    color: #fafaff;
+    font-weight: 200;
 }
 
 .weather__error {
-  color: #f16051;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 200;
+    color: #f16051;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 200;
 }

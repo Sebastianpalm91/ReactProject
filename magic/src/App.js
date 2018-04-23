@@ -55,7 +55,9 @@ class App extends Component
     render() {
         return (
             <div>
+                <div className="background"></div>
                 <div className="wrapper">
+                    <div className="flash lightning"></div>
                     <Particles className="particle"/>
                     <div className="main">
                         <div className="row">
@@ -75,8 +77,9 @@ class App extends Component
                                     error={this.state.error}
                                     />
                             </div>
+                        </div>
                     </div>
-                </div>
+
             </div>
         </div>
         );
