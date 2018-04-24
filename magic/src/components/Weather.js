@@ -2,11 +2,12 @@ import React from 'react';
 import Flag from './Flag';
 
 const Weather = props => (
-  <div className="weather__info">
+  <div className="weather__info slidein">
     {
-        props.city && props.country && <p className="weather__key row"> Area:
-            <span> {props.city}, {props.country} <Flag country={props.country}/></span>
-
+        props.city && props.country && <p className="weather__key"> Area:
+            <span> {props.city}, {props.country}
+                <Flag country={props.country}/>
+            </span>
         </p>
     }
     {
