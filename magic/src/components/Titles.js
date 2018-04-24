@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeatherAnimation.css';
+import './TitleAnimations.css';
 
 const Titles = props => (
   <div>

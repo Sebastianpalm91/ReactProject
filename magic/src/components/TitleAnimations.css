@@ -1,0 +1,36 @@
+/* TITLE ANIMATION */
+@keyframes fading-left {
+    from {
+        margin-left: -50%;
+        opacity: 0;
+     }
+    to {
+        margin-left: 0px;
+        opacity: 1;
+     }
+}
+
+.fading-left {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fading-left;
+    animation-iteration-count: 1;
+}
+
+/* SUBTITLE ANIMATION */
+.fading-right {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fading-right;
+    animation-iteration-count: 1;
+}
+@keyframes fading-right {
+    from {
+        margin-right: -50%;
+        opacity: 0;
+     }
+    to {
+        margin-right: 0px;
+        opacity: 1;
+     }
+}
