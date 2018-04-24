@@ -63,7 +63,6 @@ class App extends Component
                         <div className="row">
                             <div className="col-md-5 title-container">
                                 <Titles />
-                                <Flag country={this.state.country}/>
                             </div>
                             <div className="col-md-7 form-container">
                                 <Form getWeather={this.getWeather} />
