@@ -16,21 +16,83 @@
     right: -100px;
     transition: .5s ease-out all;
 } */
-
-.slideIn-enter {
+/*
+.fade-enter {
   opacity: 0.01;
 }
 
-.slideIn-enter.slideIn-enter-active {
+.fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 500ms ease-in;
+  transition: opacity 2000ms ease-in;
 }
 
-.slideIn-leave {
+.fade-enter-active {
+  opacity: 0;
+  transition: opacity 800ms ease-in;
+}
+
+.fade-leave {
   opacity: 1;
 }
 
-.slideIn-leave.slideIn-leave-active {
+.fade-leave.fade-leave-active {
   opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transition: opacity 400ms ease-in;
+} */
+
+/* TITLE ANIMATION */
+@keyframes fading-left {
+    from {
+        margin-left: -50%;
+        opacity: 0;
+     }
+    to {
+        margin-left: 0px;
+        opacity: 1;
+     }
+}
+
+.fading-left {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fading-left;
+    animation-iteration-count: 1;
+}
+
+/* SUBTITLE ANIMATION */
+.fading-right {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: fading-right;
+    animation-iteration-count: 1;
+}
+@keyframes fading-right {
+    from {
+        margin-right: -50%;
+        opacity: 0;
+     }
+    to {
+        margin-right: 0px;
+        opacity: 1;
+     }
+}
+
+
+/* WEATHER CONTENT ANIMATION */
+@keyframes fading-left-weather {
+    from {
+        margin-left: -150px;
+        opacity: 0;
+     }
+    to {
+        margin-left: 0px;
+        opacity: 1;
+     }
+}
+
+.fading-left-weather {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: fading-left-weather;
+    animation-iteration-count: 1;
 }
