@@ -1,0 +1,36 @@
+/*
+.slideIn-enter {
+    right: 100px;
+}
+
+.slideIn-enter-active {
+    right: 0px;
+    transition: .5s ease-in all;
+}
+
+.slideIn-leave {
+    right:0px;
+}
+
+.slideIn-leave-active {
+    right: -100px;
+    transition: .5s ease-out all;
+} */
+
+.slideIn-enter {
+  opacity: 0.01;
+}
+
+.slideIn-enter.slideIn-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.slideIn-leave {
+  opacity: 1;
+}
+
+.slideIn-leave.slideIn-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

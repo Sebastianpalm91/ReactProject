@@ -24,7 +24,7 @@ class Weather {
                   transitionName="slideIn"
                   transitionEnterTimeout={500}
                   transitionLeaveTimeout={500}>
-                <img src={props.imageSrc} key={props.imageSrc} />
+
               </ReactCSSTransitionGroup>
             </div>
           );
