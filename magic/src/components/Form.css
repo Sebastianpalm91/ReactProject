@@ -12,7 +12,6 @@ button {
     font-weight: 100;
 }
 
-
 /* Grow Shadow on search button */
 .search-button {
     -webkit-transform: perspective(1px) translateZ(0);

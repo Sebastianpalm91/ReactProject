@@ -5,9 +5,7 @@ import './WeatherAnimation.css';
 
 // </CSSTransition>
 class Weather extends Component {
-
     render () {
-
         return (
             <div className="weather__info">
 
@@ -48,7 +46,5 @@ class Weather extends Component {
         );
     };
 }
-
-
 
 export default Weather;

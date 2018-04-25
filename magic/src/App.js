@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import Titles from './components/Titles.js'
 import Form from './components/Form.js'
 import Weather from './components/Weather.js'
-import Flag from './components/Flag.js'
 import Particles from 'react-particles-js';
 import ReactCSSTransitionGroup from 'react-transition-group';
 
@@ -78,9 +77,8 @@ class App extends Component
                             </div>
                         </div>
                     </div>
-
+                </div>
             </div>
-        </div>
         );
     };
 }
