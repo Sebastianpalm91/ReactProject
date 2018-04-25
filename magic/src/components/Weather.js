@@ -10,11 +10,8 @@ class Weather extends Component {
             <div className="weather__info">
 
                 {
-                    this.props.city && this.props.country &&
-                    <p className="weather__key fading-left-weather"> Area:
-                    <span> {this.props.city}, {this.props.country}
-                        <Flag country={this.props.country}/>
-                    </span>
+                    this.props.city && this.props.country && <p className="weather__key fading-left-weather"> Area:
+                    <span> {this.props.city}, {this.props.country} <Flag country={this.props.country}/></span>
                     </p>
                 }
                 {
